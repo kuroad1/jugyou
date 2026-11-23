@@ -20,10 +20,13 @@ function setup(){
   // ここから平均・最大・最小を求めます
   let average, largest, smallest;
   // BLANK[1]　平均値（ヒント average = 合計 / 配列の長さ）
-
-  largest = 0;
-  for(let i = 0; i < scores.length; i++){
-    // BLANK[2]　ヒント：今までの最大値 largest と scores[i] を比較する
+const average = sum/scores.length
+ let largest = 0;
+ 
+  for(let i = 0; i < scores.length; i++){ 
+    if(score[i]>largest){largest=score[i]
+  }
+   // BLANK[2]　ヒント：今までの最大値 largest と scores[i] を比較する
   }
 
   smallest = 100;

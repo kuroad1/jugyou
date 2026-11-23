@@ -29,7 +29,10 @@ function setup() {
 function draw() {
   background(160, 192, 255);
   count = (count + 1) % cycle;
-  if(count < cycle/2 ){
+  if(keyIsPressed){
+    count=(count + 2 ) % cycle;
+  }
+  if( count < cycle/2 ){
     size = 50 + cycle - count;
   }else {
     size = 50 + count;
