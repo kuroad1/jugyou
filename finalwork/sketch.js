@@ -23,11 +23,10 @@ function setup() {
   cy = height / 2;
 }
 
-function draw() {
+function drawtrack(){
   background(30, 35, 50);
   noStroke();
-
-  //トラックをえんじ色で
+ //トラックをえんじ色で
   fill(180, 70, 50);
   rect(cx - straight / 2, cy - outerR, straight, outerR * 2);
   ellipse(cx - straight / 2, cy, outerR * 2);
@@ -61,8 +60,10 @@ function draw() {
     line(cx - straight / 2, cy - innerR - i * laneW, cx + straight / 2, cy - innerR - i * laneW);
     line(cx - straight / 2, cy + innerR + i * laneW, cx + straight / 2, cy + innerR + i * laneW);
   }
+}
+function draw() {
+drawtrack();
   for (let i = 0; i < athlete.length; i++) {
-
     //進んだ距離から今いる区間を判別して速度を変える
     let k
     if (athlete[i].d < 100) {
