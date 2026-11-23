@@ -18,7 +18,7 @@ const athlete = [
 ];//[レーン、名前、国、国旗の色、国旗の色２、100mごとのラップタイム、走った道のり]
 
 function setup() {
-  createCanvas(950, 520);
+  createCanvas(windowWidth, windowHeight);
   cx = width / 2;
   cy = height / 2;
 }
